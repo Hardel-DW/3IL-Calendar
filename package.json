@@ -1,0 +1,37 @@
+{
+  "name": "higa-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && npm run run",
+    "run": "node .",
+    "dev": "nodemon --watch ./ --ext ts --exec npm run dev:serve",
+    "dev:serve": "ts-node --files src -- true"
+  },
+  "author": "fantomitechno",
+  "license": "ISC",
+  "private": "true",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^16.2.13",
+    "@types/node": "^17.0.12",
+    "@types/node-fetch": "^2.5.12",
+    "discord-api-types": "^0.26.1",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "dotenv": "^14.2.0",
+    "googleapis": "^92.0.0",
+    "higa": "^0.0.2",
+    "jsdom": "^18.0.0",
+    "moment": "^2.29.1",
+    "node-fetch": "2.6.6"
+  }
+}

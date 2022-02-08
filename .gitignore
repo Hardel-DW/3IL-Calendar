@@ -1,0 +1,13 @@
+node_modules
+build
+package-lock.json
+src/Credentials/
+.git
+.DS_Store
+.idea
+.vscode
+.vscodeignore
+.vscode-test
+.vscode-test-state
+.env
+credentials.json
